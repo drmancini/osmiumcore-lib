@@ -31,4 +31,4 @@
   - [Transaction.Input](usage/transaction_input.md)
   - [Transaction.Output](usage/transaction_output.md)
   - [URI](usage/uri.md)
-- [License](https://github.com/socialruins/raptoreumcore-lib/blob/master/LICENSE)
+- [License](https://github.com/drmancini/osmiumcore-lib/blob/master/LICENSE)

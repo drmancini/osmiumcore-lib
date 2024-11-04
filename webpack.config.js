@@ -24,8 +24,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'raptoreumcore-lib.min.js',
-    library: 'raptoreumcore',
+    filename: 'osmiumcore-lib.min.js',
+    library: 'osmiumcore',
     libraryTarget: 'umd',
   },
   optimization: {

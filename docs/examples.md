@@ -1,4 +1,4 @@
-# RaptoreumCore examples
+# osmiumCore examples
 
 ## Create and Save a Private Key
 

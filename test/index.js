@@ -8,8 +8,8 @@ var sinon = require('sinon');
 var bitcore = require('../index.js');
 
 describe('#versionGuard', function () {
-  it('global._raptoreumcore should be defined', function () {
-    should.equal(global._raptoreumcore, bitcore.version);
+  it('global._osmiumcore should be defined', function () {
+    should.equal(global._osmiumcore, bitcore.version);
   });
 
   it('throw a warning if version is already defined', function () {
@@ -18,7 +18,7 @@ describe('#versionGuard', function () {
     should.equal(console.warn.calledOnce, true);
     should.equal(
       console.warn.calledWith(
-        'More than one instance of raptoreumcore-lib found. Please make sure that you are not mixing instances of classes of the different versions of raptoreumcore.'
+        'More than one instance of osmiumcore-lib found. Please make sure that you are not mixing instances of classes of the different versions of osmiumcore.'
       ),
       true
     );

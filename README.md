@@ -1,8 +1,8 @@
-# RaptoreumCore Library
+# osmiumCore Library
 
-A pure and powerful JavaScript Raptoreum library.
+A pure and powerful JavaScript osmium library.
 
-Raptoreum is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Dash network allows for highly resilient Raptoreum infrastructure, and the developer community needs reliable, open-source tools to implement Raptoreum apps and services.
+osmium is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Dash network allows for highly resilient osmium infrastructure, and the developer community needs reliable, open-source tools to implement osmium apps and services.
 
 ## Table of Contents
 
@@ -24,22 +24,22 @@ npm install @dashevo/dashcore-lib
 
 #### Building the Browser Bundle
 
-To build a raptoreumcore-lib full bundle for the browser:
+To build a osmiumcore-lib full bundle for the browser:
 
 ```sh
 npm run build
 ```
 
-This will generate a file named `raptoreumcore-lib.min.js` in the `dist/` folder.
+This will generate a file named `osmiumcore-lib.min.js` in the `dist/` folder.
 
 ## Usage
 
 ### Browser
 
 ```
-<script src='./dist/raptoreumcore-lib.min.js' type="text/javascript"></script>
+<script src='./dist/osmiumcore-lib.min.js' type="text/javascript"></script>
 <script>
-  const PrivateKey = raptoreumcore.PrivateKey;
+  const PrivateKey = osmiumcore.PrivateKey;
   const privateKey = new PrivateKey();
   const address = privateKey.toAddress().toString();
 </script>
@@ -59,8 +59,8 @@ Some functionality is implemented as a module that can be installed separately:
 ### Development & Tests
 
 ```sh
-git clone https://github.com/socialruins/raptoreumcore-lib
-cd raptoreumcore-lib
+git clone https://github.com/drmancini/osmiumcore-lib
+cd osmiumcore-lib
 npm install
 ```
 
@@ -126,7 +126,7 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/socialruins/raptoreumcore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/drmancini/osmiumcore-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
@@ -135,4 +135,4 @@ Code released under [the MIT license](LICENSE).
 Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.  
 Copyright 2016-2017 The Dash Foundation, Inc.  
 Copyright 2017-2020 Dash Core Group, Inc.
-Copyright 2023 Raptoreum
+Copyright 2023 osmium

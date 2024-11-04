@@ -1,10 +1,10 @@
 {
-  "name": "@socialruins/raptoreumcore-lib",
+  "name": "@drmancini/osmiumcore-lib",
   "version": "0.19.44",
-  "description": "A pure and powerful JavaScript Raptoreum library.",
+  "description": "A pure and powerful JavaScript osmium library.",
   "author": "Dash Core Group, Inc. <dev@dash.org>",
   "main": "index.js",
-  "unpkg": "dist/raptoreumcore-lib.min.js",
+  "unpkg": "dist/osmiumcore-lib.min.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "eslint .",
@@ -94,7 +94,7 @@
     }
   ],
   "keywords": [
-    "raptoreum",
+    "osmium",
     "transaction",
     "address",
     "p2p",
@@ -108,17 +108,17 @@
     "bip69",
     "bip70",
     "multisig",
-    "raptoreumcore"
+    "osmiumcore"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/socialruins/raptoreumcore-lib.git"
+    "url": "https://github.com/drmancini/osmiumcore-lib.git"
   },
   "types": "index.d.ts",
   "bugs": {
-    "url": "https://github.com/socialruins/raptoreumcore-lib/issues"
+    "url": "https://github.com/drmancini/osmiumcore-lib/issues"
   },
-  "homepage": "https://github.com/socialruins/raptoreumcore-lib",
+  "homepage": "https://github.com/drmancini/osmiumcore-lib",
   "dependencies": {
     "@dashevo/x11-hash-js": "^1.0.2",
     "@types/node": "^12.12.47",

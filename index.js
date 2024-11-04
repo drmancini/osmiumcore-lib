@@ -11,8 +11,8 @@ bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function (version) {
   if (version !== undefined) {
     var message =
-      'More than one instance of raptoreumcore-lib found. ' +
-      'Please make sure that you are not mixing instances of classes of the different versions of raptoreumcore.';
+      'More than one instance of osmiumcore-lib found. ' +
+      'Please make sure that you are not mixing instances of classes of the different versions of osmiumcore.';
     console.warn(message);
   }
 };

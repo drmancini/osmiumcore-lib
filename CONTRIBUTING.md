@@ -1,12 +1,12 @@
-# Contributing to raptoreumcore-lib
+# Contributing to osmiumcore-lib
 
-We're working hard to make _raptoreumcore-lib_ the most powerful JavaScript library for working with Raptoreum. Our goal is to have _raptoreumcore-lib_ be a library that can be used by anyone interested in Raptoreum, and to level expertise differences with great design and documentation.
+We're working hard to make _osmiumcore-lib_ the most powerful JavaScript library for working with osmium. Our goal is to have _osmiumcore-lib_ be a library that can be used by anyone interested in osmium, and to level expertise differences with great design and documentation.
 
 ## Community
 
 If there are any questions, etc., please feel to ask in one of the community channels:
 
-- https://www.raptoreum.com (Discord)
+- https://www.osmium.com (Discord)
 
 ## Quick Checklist
 
@@ -18,7 +18,7 @@ Ideally, please make sure to run:
 
 ## Design Guidelines
 
-These are some global design goals in raptoreumcore-lib that any change must adhere.
+These are some global design goals in osmiumcore-lib that any change must adhere.
 
 ### D1 - Naming Matters
 
@@ -92,7 +92,7 @@ var bufferUtil = require('./util/buffer');
 
 #### G7 - Standard Methods
 
-When possible, raptoreumcore-lib objects should have standard methods on an instance prototype:
+When possible, osmiumcore-lib objects should have standard methods on an instance prototype:
 
 - `toObject/toJSON` - A plain JavaScript object that `JSON.stringify` can call
 - `toString` - A string representation of the instance
@@ -104,7 +104,7 @@ These should have a matching static method that can be used for instantiation:
 - `fromString` - Should be able to instantiate with output from `toString`
 - `fromBuffer` - Should likewise be able to instantiate from output from `toBuffer`
 
-`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of raptoreumcore-lib methods. For example, calling `JSON.stringify` on an raptoreumcore-lib object will behave as expected and call `transaction.toJSON()` and then stringify it:
+`JSON.stringify` and `JSON.parse` are expected to be handled outside of the scope of osmiumcore-lib methods. For example, calling `JSON.stringify` on an osmiumcore-lib object will behave as expected and call `transaction.toJSON()` and then stringify it:
 
 ```javascript
 var transactionString = JSON.stringify(transaction);
@@ -119,7 +119,7 @@ var tx = new Transaction(data);
 
 ### Errors
 
-#### E1 - Use raptoreumcore.Errors
+#### E1 - Use osmiumcore.Errors
 
 We've designed a structure for Errors to follow and are slowly migrating to it.
 
@@ -214,15 +214,15 @@ Don't write long tests, write helper functions to make them be as short and conc
 
 Inputs for tests should not be generated randomly. Also, the type and structure of outputs should be checked.
 
-#### T3 - Require 'raptoreumcore' and Look up Classes from There
+#### T3 - Require 'osmiumcore' and Look up Classes from There
 
-This helps to make tests more useful as examples, and more independent of where they are placed. This also helps prevent forgetting to include all submodules in the raptoreumcore object.
+This helps to make tests more useful as examples, and more independent of where they are placed. This also helps prevent forgetting to include all submodules in the osmiumcore object.
 
 DO:
 
 ```javascript
-var raptoreumcore = require('../');
-var PublicKey = raptoreumcore.PublicKey;
+var osmiumcore = require('../');
+var PublicKey = osmiumcore.PublicKey;
 ```
 
 DON'T:
@@ -259,7 +259,7 @@ git checkout -b remove/some-file
 We expect pull requests to be rebased to the master branch before merging:
 
 ```sh
-git remote add dashevo git@github.com:socialruins/raptoreumcore-lib.git
+git remote add dashevo git@github.com:drmancini/osmiumcore-lib.git
 git pull --rebase dashevo master
 ```
 
@@ -273,11 +273,11 @@ git push origin feature/some-new-stuff
 git push origin fix/some-bug
 ```
 
-Finally go to [github.com/socialruins/raptoreumcore-lib](https://github.com/socialruins/raptoreumcore-lib) in your web browser and issue a new pull request.
+Finally go to [github.com/drmancini/osmiumcore-lib](https://github.com/drmancini/osmiumcore-lib) in your web browser and issue a new pull request.
 
-Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of raptoreumcore-lib.
+Main contributors will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of osmiumcore-lib.
 
 If you have any questions feel free to post them to
-[github.com/socialruins/raptoreumcore-lib/issues](https://github.com/socialruins/raptoreumcore-lib/issues).
+[github.com/drmancini/osmiumcore-lib/issues](https://github.com/drmancini/osmiumcore-lib/issues).
 
 Thanks for your time and code!
